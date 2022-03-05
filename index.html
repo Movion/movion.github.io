@@ -1,5 +1,166 @@
 <!DOCTYPE html>
-<html>
-  <iframe src="StarWarsMC%20Community%20Guidelines.pdf" width="100%" height=100%" />
-  
-</html>
+
+<!-- Portal page made by Haris Zia - dice#2573 on discord -->
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>SWMC Portal</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/logo.png">
+    <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js"></script>
+    <script src="https://mcapi.us/scripts/minecraft.js"></script>
+  </head>
+  <body>
+    <div id='stars'></div>
+    <div id='stars2'></div>
+    <div id='stars3'></div>
+    <section class="navbar">
+      <div class="left">
+        <img class="slogo" src="images/logo.png" alt="slogo">
+      </div>
+      <div class="right">
+        <a href="https://starwarsmc.org/site/" class="down">home</a>
+        <a href="https://starwarsmc.org/site/forum/" class="down">forums</a>
+        <a href="http://store.starwarsmc.org/" class="down">store</a>
+        <a href="https://starwarsmc.org/site/rules/" class="down">rules</a>
+      </div>
+      <div class="drop">
+        <div class="menuicon" onclick="menuChange(this);dropMenu()">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+        <div class="dropdown" id="menu">
+         <div class="links">
+          <a href="https://starwarsmc.org/site/" class="down">home</a>
+          <a href="https://starwarsmc.org/site/forum/" class="down">forums</a>
+          <a href="http://store.starwarsmc.org/" class="down">store</a>
+          <a href="https://starwarsmc.org/site/rules/" class="down">rules</a>
+         </div>
+        </div>
+      </div>
+    </section>
+    <section class="main">
+      <div class="mlogo" data-aos="zoom-in" data-aos-duration="1000">
+        <img class="blogo" src="images/swlogofull.png" alt="biglogo">
+      </div>
+      <div class="copyip">
+        <button class="ip" id="ipsw" onclick="ipClick()" data-clipboard-text="play.starwarsmc.org">play.starwarsmc.org</button>
+      </div>
+      <div class="icons">
+        <a href="https://twitter.com/StarWars_MC"><i class="fab fa-twitter"></i></a>
+        <a href="http://discord.starwarsmc.org"><i class="fab fa-discord"></i></a>
+        <a href="https://www.youtube.com/channel/UC-BIzYOBbGkr5wrUr06KBLg"><i class="fab fa-youtube"></i></a>
+      </div>
+      <div class="playerbox"><span class="playercounter">...</span> players online</div>
+    </section>
+    <section class="about">
+     <div class="head">
+      <div class="info">
+        <div class="tricks">Stop playing these mind tricks. What is SWMC?</div>
+        <h2 class="swmc">Founded in 2014 by MrHappeh and B_Owens, now owned by Movion, Star Wars MC is a factions server based in the Star Wars universe, offering things like missions, custom weapons, ranks, and more! You can create a faction and rule the galaxy, or maybe set up giant farms and become a millionaire! On SWMC, you choose your destiny. What are you waiting for? Fire up your hyperdrive and join us!</h2>
+      </div>
+      <div class="imgswmc" data-aos="zoom-in" data-aos-duration="1000">
+        <img class="fight" src="images/duel.png" alt="fight">
+      </div>
+     </div>
+     <div class="side">
+       <div class="choose">
+         Which path will you take? Will you
+         <strong class="jedi">embrace the light,</strong>
+         be
+         <strong class="sith">drawn to the dark side,</strong>
+         or be enticed by the sight of money and be
+         <strong class="bounty">captivated to join the bounty hunters?</strong>
+         <div class=iphold><a href="https://www.starwars-mc.com/" class="swip">play.starwarsmc.org</a></div>
+       </div>
+     </div>
+     <div class="offer">
+      <h2 class="features">Features</h2>
+      <div class="offering">
+        <div class="feature">
+          <div class="holder" data-aos="zoom-in" data-aos-duration="1000"><img class="icon" src="images/saber.png" alt="weapon"></div>
+          <div class="title" data-aos="zoom-out" data-aos-duration="1500">Weapons</div>
+          <p class="depth" data-aos="fade-up" data-aos-duration="2000">Custom guns and sabers are at your availability. These weapons help you fight through the ranks and rule the galaxy with an iron fist. As you rank up, you gain access to more weapons and more missions. Missions are essential for gaining parts to craft weapons.</p>
+        </div>
+        <div class="feature">
+          <div class="holder" data-aos="zoom-in" data-aos-duration="1000"><img class="icon" src="images/force.png" alt="force"></div>
+          <div class="title" data-aos="zoom-out" data-aos-duration="1500">Force Powers</div>
+          <p class="depth" data-aos="fade-up" data-aos-duration="2000">Forcepowers are part of the SWMC experience. Both jedi and sith get their own different forcepowers which they can use alongside their lightsabers to help them in battle. As you rank up, you unlock access to more and more forcepowers which are more powerful than the ones before them.</p>
+        </div>
+        <div class="feature">
+          <div class="holder" data-aos="zoom-in" data-aos-duration="1000"><img class="icon" src="images/planet.png" alt="planets"></div>
+          <div class="title" data-aos="zoom-out" data-aos-duration="1500">Planets</div>
+          <p class="depth" data-aos="fade-up" data-aos-duration="2000">Different planets with missions are available. Missions give rewards like money or trophies, or give items that are essential for gameplay such as crafting items for sabers and guns. Different planets also offer resources or a place to build up a faction and empire.</p>
+        </div>
+        <div class="feature">
+          <div class="holder" data-aos="zoom-in" data-aos-duration="1000"><img class="icon" src="images/ranks.png" alt="ranks"></div>
+          <div class="title" data-aos="zoom-out" data-aos-duration="1500">Ranks</div>
+          <p class="depth" data-aos="fade-up" data-aos-duration="2000">Ranks are an essential part of SWMC. As a player gains money, they are able to rank up through their respective tree (bounty, jedi, sith) and unlock new permissions like access to different worlds and weapons. Ranks also unlock other permissions like the ability to nickname yourself or use different saber and gun types.</p>
+        </div>
+      </div>
+     </div>
+    </section>
+    <footer>
+     <div class="onefoot">
+       <div class="footlogo"><img class="logofoot" src="images/logo.png" alt="blogo"></div>
+     </div>
+     <div class="twofoot">
+      <div class="footlinks">
+       <div class="tos">
+         <a href="terms.html" class="terms">Terms Of Service</a>
+       </div>
+      </div>
+      <div class="webhold">
+        <div class="web">
+         &#169; 2019 Star Wars MC. All Rights Reserved
+       </div>
+      </div>
+     </div>
+     <div class="threefoot">
+      <div class="footinfo">
+        <div class="foottitle">
+          <div class="experience">Star Wars MC is a <strong class="exp2">one of a kind</strong> experience. Come choose your destiny at</p></div>
+        </div>
+        <button class="ipfoot" id="ipft" data-clipboard-text="play.starwarsmc.org">play.starwarsmc.org</button>
+      </div>
+     </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+    AOS.init();
+
+    function menuChange(x) {
+      x.classList.toggle("change");
+    }
+
+    function dropMenu() {
+      var x = document.getElementById("menu");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+
+    new ClipboardJS('.ip');
+    new ClipboardJS('.ipfoot');
+    function ipClick() {
+      document.getElementById('ipsw').innerText = 'ip copied!';
+      document.getElementById('ipsw').classList.add('no-hover');
+    }
+
+    MinecraftAPI.getServerStatus('play.starwarsmc.org', {
+    }, function (err, status) {
+      if (err) {
+        return document.querySelector('.playerbox').innerHTML = 'Error loading';
+      }
+      document.querySelector('.playercounter').innerHTML = status.players.now;
+      });
+    </script>
+  </body>

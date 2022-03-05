@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>SWMC Portal</title>
+    <link rel="stylesheet" type="text/css" href="terms.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js"></script>
+  </head>
+  <body>
+    <section class="navbar">
+      <div class="left">
+        <img class="slogo" src="images/logo.png" alt="slogo">
+      </div>
+      <div class="right">
+        <a href="https://starwarsmc.org/site/" class="nav">home</a>
+        <a href="https://starwarsmc.org/site/forum/" class="nav">forums</a>
+        <a href="http://store.starwarsmc.org/" class="nav">store</a>
+        <a href="https://starwarsmc.org/site/rules/" class="nav">rules</a>
+      </div>
+      <div class="drop">
+        <div class="menuicon" onclick="menuChange(this);dropMenu()">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+        <div class="dropdown" id="menu">
+         <div class="links">
+           <a href="https://starwarsmc.org/site/" class="down">home</a>
+           <a href="https://starwarsmc.org/site/forum/" class="down">forums</a>
+           <a href="http://store.starwarsmc.org/" class="down">store</a>
+           <a href="https://starwarsmc.org/site/rules/" class="down">rules</a>
+         </div>
+        </div>
+      </div>
+    </section>
+    <section class="main">
+      <div class="details">
+        <div class="titlehold"><h2 class="title">SWMC tos</h2></div>
+        <div class="infohold"><p class="info">The Starwars MC server (SWMC) staff team reserves to change the following terms at any point without notice. By accepting the ingame prompt upon entering the game, each user agrees to follow to the rules set upon the server, and accepts that they fully acknowledge and understand the following:</p></div>
+        <div class="first">
+          <h3 class="explain">collection of data</h2>
+          <div class="depthholder"><p class="depth">To provide players with the most enjoyable time on our server we require users to consent the following collection of data associated with their minecraft account including but not limited to:<br><br>• IP addresses and login information<br>• Ingame stats<br>• Rank and purchase details<br>• Ingame chat and command logs<br>• Ingame and chat behavior<br><br>Data collected will not be sold to third parties and will solely be used to ensure everyone has an enjoyable playing experience.</p></div>
+        </div>
+        <div class="second">
+          <h3 class="explain">donations and purchases</h2>
+          <div class="depthholder"><p class="depth">The SWMC staff reserve the right to change donation perks at any time. If a user is banned from entering our server,  their  donator rank may be forfeit and they may not be refunded. There is no guarantee on being able to join the server, and during the event that the server is no longer operated, virtual ranks or purchases are forfeit. Refund requests due to issues concerning lag, game glitches, or other issues are under the discretion of the SWMC administration team.</p></div>
+        </div>
+        <div class="third">
+          <h3 class="explain">ingame rules and punishments</h2>
+          <div class="depthholder"><p class="depth">Bans and punishments for breaking rules are under the full discretion of the SWMC administration and moderation teams. If a user has a problem or concern with a punishment, they may appeal and/or talk to the staff member who punished them. The SWMC staff team reserves the right to change rules at any time without notice.</p></div>
+        </div>
+        <div class="concernholder"><p class="concerns">If you have any questions or concerns regarding these terms, please talk to a SWMC staff member or email us at info@starwarsmc.org</p></div>
+      </div>
+    </section>
+    <footer>
+     <div class="onefoot">
+       <div class="footlogo"><img class="logofoot" src="images/logo.png" alt="blogo"></div>
+     </div>
+     <div class="twofoot">
+      <div class="footlinks">
+       <div class="portal">
+         <a href="index.html" class="home">Portal Home</a>
+       </div>
+      </div>
+      <div class="webhold">
+        <div class="web">
+         &#169; 2019 Star Wars MC. All Rights Reserved
+       </div>
+      </div>
+     </div>
+     <div class="threefoot">
+      <div class="footinfo">
+        <div class="foottitle">
+          <div class="experience">Star Wars MC is a <strong class="exp2">one of a kind</strong> experience. Come choose your destiny at</p></div>
+        </div>
+        <button class="ipfoot" id="ipft" data-clipboard-text="play.starwarsmc.org">play.starwarsmc.org</button>
+      </div>
+     </div>
+    </footer>
+    <script>
+      function menuChange(x) {
+        x.classList.toggle("change");
+      }
+
+      function dropMenu() {
+        var x = document.getElementById("menu");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+
+      new ClipboardJS('.ipfoot');
+    </script>
+  </body>
+</html>
