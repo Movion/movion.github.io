@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 
-<!-- Portal page made by Haris Zia - dice#2573 on discord -->
+<!-- Portal page made by Haris Zia - dice#2573 on discord - customised for SWMC Classic by Movion-->
 
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>SWMC Portal</title>
+    <title>SWMC Classic Portal</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="images/favicon.ico">
@@ -24,10 +24,9 @@
         <img class="slogo" src="images/logo.png" alt="slogo">
       </div>
       <div class="right">
-        <a href="https://starwarsmc.org/site/" class="down">home</a>
-        <a href="https://starwarsmc.org/site/forum/" class="down">forums</a>
-        <a href="http://store.starwarsmc.org/" class="down">store</a>
-        <a href="https://starwarsmc.org/site/rules/" class="down">rules</a>
+        <a href="https://movion.github.io/" class="down">home</a>
+        <a href="https://starwarsmc-com.enjin.com/store" class="down">store</a>
+        <a href="https://movion.github.io/rules" class="down">rules</a>
       </div>
       <div class="drop">
         <div class="menuicon" onclick="menuChange(this);dropMenu()">
@@ -37,10 +36,9 @@
         </div>
         <div class="dropdown" id="menu">
          <div class="links">
-          <a href="https://starwarsmc.org/site/" class="down">home</a>
-          <a href="https://starwarsmc.org/site/forum/" class="down">forums</a>
-          <a href="http://store.starwarsmc.org/" class="down">store</a>
-          <a href="https://starwarsmc.org/site/rules/" class="down">rules</a>
+          <a href="https://movion.github.io/" class="down">home</a>
+          <a href="https://starwarsmc-com.enjin.com/store" class="down">store</a>
+          <a href="https://movion.github.io/rules" class="down">rules</a>
          </div>
         </div>
       </div>
@@ -50,11 +48,11 @@
         <img class="blogo" src="images/swlogofull.png" alt="biglogo">
       </div>
       <div class="copyip">
-        <button class="ip" id="ipsw" onclick="ipClick()" data-clipboard-text="play.starwarsmc.org">play.starwarsmc.org</button>
+        <button class="ip" id="ipsw" onclick="ipClick()" data-clipboard-text="play.starwarsmc.org">classic.starwarsmc.org</button>
       </div>
       <div class="icons">
         <a href="https://twitter.com/StarWars_MC"><i class="fab fa-twitter"></i></a>
-        <a href="http://discord.starwarsmc.org"><i class="fab fa-discord"></i></a>
+        <a href="http://discord.gg/mgcjJ7pWFn"><i class="fab fa-discord"></i></a>
         <a href="https://www.youtube.com/channel/UC-BIzYOBbGkr5wrUr06KBLg"><i class="fab fa-youtube"></i></a>
       </div>
       <div class="playerbox"><span class="playercounter">...</span> players online</div>
@@ -62,8 +60,8 @@
     <section class="about">
      <div class="head">
       <div class="info">
-        <div class="tricks">Stop playing these mind tricks. What is SWMC?</div>
-        <h2 class="swmc">Founded in 2014 by MrHappeh and B_Owens, now owned by Movion, Star Wars MC is a factions server based in the Star Wars universe, offering things like missions, custom weapons, ranks, and more! You can create a faction and rule the galaxy, or maybe set up giant farms and become a millionaire! On SWMC, you choose your destiny. What are you waiting for? Fire up your hyperdrive and join us!</h2>
+        <div class="tricks">Stop playing these mind tricks. What is SWMC Classic?</div>
+        <h2 class="swmc">Founded in 2014 by MrHappeh and B_Owens, now owned by Movion, Star Wars MC Classic is THE revived factions server based in the Star Wars universe, offering things like missions, custom weapons, ranks, and more! You can create a faction and rule the galaxy, or maybe set up giant farms and become a millionaire! On SWMC, you choose your destiny. What are you waiting for? Fire up your hyperdrive and join us!</h2>
       </div>
       <div class="imgswmc" data-aos="zoom-in" data-aos-duration="1000">
         <img class="fight" src="images/duel.png" alt="fight">
@@ -77,7 +75,7 @@
          <strong class="sith">drawn to the dark side,</strong>
          or be enticed by the sight of money and be
          <strong class="bounty">captivated to join the bounty hunters?</strong>
-         <div class=iphold><a href="https://www.starwars-mc.com/" class="swip">play.starwarsmc.org</a></div>
+         <div class=iphold><a href="https://starwarsmc-com.enjin.com/" class="swip">classic.starwarsmc.org</a></div>
        </div>
      </div>
      <div class="offer">
@@ -118,16 +116,16 @@
       </div>
       <div class="webhold">
         <div class="web">
-         &#169; 2019 Star Wars MC. All Rights Reserved
+         &#169; 2022 Star Wars MC. All Rights Reserved
        </div>
       </div>
      </div>
      <div class="threefoot">
       <div class="footinfo">
         <div class="foottitle">
-          <div class="experience">Star Wars MC is a <strong class="exp2">one of a kind</strong> experience. Come choose your destiny at</p></div>
+          <div class="experience">Star Wars MC Classic is a <strong class="exp2">one of a kind</strong> experience. Come choose your destiny at</p></div>
         </div>
-        <button class="ipfoot" id="ipft" data-clipboard-text="play.starwarsmc.org">play.starwarsmc.org</button>
+        <button class="ipfoot" id="ipft" data-clipboard-text="play.starwarsmc.org">classic.starwarsmc.org</button>
       </div>
      </div>
     </footer>
@@ -155,7 +153,7 @@
       document.getElementById('ipsw').classList.add('no-hover');
     }
 
-    MinecraftAPI.getServerStatus('play.starwarsmc.org', {
+    MinecraftAPI.getServerStatus('classic.starwarsmc.org', {
     }, function (err, status) {
       if (err) {
         return document.querySelector('.playerbox').innerHTML = 'Error loading';
